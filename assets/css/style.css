@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #F58d17;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+/* btn */
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+}
+
+.btn-brand:hover {
+    color: #fff;
+    border-color: #cf7916;
+    background-color: #cf7916;
+}
+
+.bg-cover {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Slider */
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/BeefRendang.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/OporAyam.jpg);
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Rujak.jpg);
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/* About */
+#about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #F58d17;
+}
+
+/* Intro Text */
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Menu */
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #F58d17;
+    color: #fff;
+}
+
+.menu-item .stars, .review-content .stars-review{
+    color: #F58d17;
+}
+
+/* Features */
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Cover2.jpg);
+}
+
+.feature {
+    border: 2px solid #ffffff69;
+}
+
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #F58d17;
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+/* Review */
+.review img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.quote {
+    color: #F58d17;
+    font-size: 40px;
+}
+
+#review .divider {
+    width: auto;
+    height: 1px;
+    background-color: #F58d17;
+    margin-top: 7rem;
+}
+
+@media (max-width: 768px) {
+    .review {
+        flex-direction: column;
+    }
+    .review img {
+        width: 100%;
+    }
+}
+
+/* Reservation */
+#reservation .form-control {
+    border-radius: 0;
+}
+
+#reservation .form-control:focus {
+    box-shadow: none;
+    border-color: #F58d17;
+}
+
+#reservation input.form-control {
+    height: 47px;
+}
+
+/* Blog post */
+.blog-post img {
+    width: 40%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post img {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Cover1.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a{
+    font-weight: normal;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+footer a.brand {
+    font-weight: bolder;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
